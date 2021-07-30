@@ -1,0 +1,8 @@
+#!/bin/bash
+
+curl -s -o - http://127.0.0.1/fib/20 2>&1 >/dev/null
+T=$(curl -s -o - http://127.0.0.1/fetchmemoct/100)
+
+if [ X"$T" != X$"11" ]; then 
+   exit 1
+fi

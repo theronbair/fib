@@ -1,0 +1,7 @@
+#!/bin/bash
+
+T=$(curl -s -o - http://127.0.0.1/dlkng2eoingwoein)
+
+if [ X"$T" != X$"404 page not found" ]; then 
+   exit 1
+fi

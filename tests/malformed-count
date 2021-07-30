@@ -1,0 +1,7 @@
+#!/bin/bash
+
+T=$(curl -s -o - http://127.0.0.1/fetchmemoct/x1)
+
+if [ X"$T" != X$"Badly formed request" ]; then 
+   exit 1
+fi

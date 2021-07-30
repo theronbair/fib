@@ -1,0 +1,7 @@
+#!/bin/bash
+
+T=$(curl -s -o - http://127.0.0.1/purge)
+
+if [ X"$T" != X$"1" ]; then 
+   exit 1
+fi
